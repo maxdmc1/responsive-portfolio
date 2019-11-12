@@ -35,13 +35,36 @@
     <!-- line to have background image below everything - css written to have it reach 1200px down -->
     <div class="main" style="background-image: url(./assets/images/gravel.png);">
         <div class="container">
- 
+            <!-- Row to include Header 2 About Me -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="h2">Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- tried to extend form across all 12 columns using the class col-xs-12 - this isn't working for some reason - fixed by adding a width 90% in css for col-xs-12 class -->
+                <form class="col-xs-12">
+                    <div class="form-name-email col-xs-12 m-1">
+                        <label for="input-name">Name</label><br>
+                        <input type="name" class="form-name col-xs-12 m-1" placeholder="John Smith">
+                    </div>
+                    <div class="form-name-email col-xs-12 m-1">
+                        <label for="input-email">Email</label><br>
+                        <input type="email" class="form-name col-xs-12 m-1" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-name-email col-xs-12 m-1">
+                        <label for="input-message">Message</label><br>
+                        <input type="message" class="form-message col-xs-12 m-1">
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
     <footer class="footer">Copyright &#169 Max McCord</footer>
 
 
-<!-- links to javascript so navbar button works properly and allows links to be accessed -->
+    <!-- links to javascript so navbar button works properly and allows links to be accessed -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
